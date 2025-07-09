@@ -1,0 +1,146 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfaf6;
+  color: #333;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.section {
+  padding: 100px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #6b4c35;
+}
+
+.section p,
+.section ul {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 8px 0;
+}
+
+.hero {
+  background-color: #f2e7dc;
+  padding-top: 120px;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+/* Header responsiveness */
+@media (max-width: 768px) {
+  .header nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .header ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main {
+    padding-top: 80px;
+  }
+
+  .section {
+    padding: 60px 20px;
+  }
+
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-logo {
+    justify-content: center;
+  }
+}
+.footer {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.footer-logo h3 {
+  color: #d6a76c;
+  margin: 0;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+  font-size: 1.1rem;
+}
+
+.footer-social a {
+  color: #f0f0f0;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.footer-social a:hover {
+  color: #d6a76c;
+}
