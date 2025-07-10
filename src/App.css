@@ -8,26 +8,11 @@ html {
   box-sizing: border-box;
 }
 
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  font-family: 'Segoe UI', sans-serif;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #eb8706;  /* or any clean dark/light base */
-  color: #c4bbbb;
-}
-
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background-color: #fdfaf6;
   color: #333;
-  text-align: center;
-  padding-top: 100px;
 }
 
 .section {
@@ -82,21 +67,9 @@ body {
 
 .gallery-grid img:hover {
   transform: scale(1.05);
-}
-/* Header responsiveness */
-@media (max-width: 768px) {
-  .header nav {
-    flex-direction: column;
-    gap: 10px;
   }
-
-  .header ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .main {
+   @media (max-width: 768px){
+    .main {
     padding-top: 80px;
   }
 
@@ -117,6 +90,7 @@ body {
     justify-content: center;
   }
 }
+
 .footer {
   background-color: #1e1e1e;
   color: #f0f0f0;
