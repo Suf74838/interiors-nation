@@ -9,7 +9,7 @@
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #e9c79b; /* warm beige */
+  background-color: #e9c79b;
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,6 @@
   z-index: 1000;
 }
 
-/* On wider screens: logo left, nav right */
 @media (min-width: 600px) {
   .header {
     flex-direction: row;
@@ -43,9 +42,9 @@
   }
 }
 
+/* ===== NAV LINKS DEFAULT (DESKTOP) ===== */
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
 }
@@ -66,18 +65,7 @@
   color: #ff9900;
 }
 
-/* On small screens: horizontal scroll if needed */
-@media (max-width: 500px) {
-  .nav-links {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    justify-content: flex-start;
-  }
-
-  .nav-links a {
-    flex: 0 0 auto;
-  }
-}
+/* ===== HAMBURGER ICON ===== */
 .hamburger {
   display: none;
   font-size: 30px;
@@ -87,6 +75,7 @@
   z-index: 1100;
 }
 
+/* ===== MOBILE MENU STYLES ===== */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
