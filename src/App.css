@@ -1,10 +1,23 @@
 html {
   scroll-behavior: smooth;
 }
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #cc8b36;  /* or any clean dark/light base */
+  background-color: #eb8706;  /* or any clean dark/light base */
   color: #c4bbbb;
 }
 
@@ -46,8 +59,9 @@ body {
 }
 
 .hero {
+  margin-top: 0;
   background-color: #f2e7dc;
-  padding-top: 120px;
+  padding-top: 60px;
 }
 .gallery-grid {
   display: grid;
