@@ -61,7 +61,7 @@ body {
 .hero {
   margin-top: 0;
   background-color: #f2e7dc;
-  padding-top: 60px;
+  padding-top: 10px;
 }
 .gallery-grid {
   display: grid;
