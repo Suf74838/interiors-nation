@@ -64,7 +64,7 @@
   }
 }
 .header {
-  background-color: #111;
+  background-color: #ce0f0f;
   padding: 15px 20px;
   color: white;
   position: sticky;
@@ -82,14 +82,19 @@ nav {
 nav a {
   color: white;
   text-decoration: none;
-  font-weight: 500;
-  font-size: 16px;
-  transition: color 0.2s ease;
+  font-weight: 600;       /* Make font bolder */
+  font-size: 18px;        /* Slightly larger */
+  letter-spacing: 0.5px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  background-color: #94740c22; /* light transparent hover effect */
+  color: #ffcc00;              /* highlight color on hover */
 }
+
 @media (max-width: 500px) {
   nav {
     flex-wrap: nowrap;
