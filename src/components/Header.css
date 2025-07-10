@@ -78,25 +78,32 @@
     flex: 0 0 auto;
   }
 }
-
 .hamburger {
   display: none;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
-  margin-left: auto;
   padding: 10px;
+  color: #333;
+  z-index: 1100;
 }
 
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    position: absolute;
+    right: 20px;
+    top: 25px;
   }
 
   .nav-links {
     display: none;
     flex-direction: column;
     background-color: #e9c79b;
+    position: absolute;
+    top: 80px;
+    left: 0;
     width: 100%;
+    z-index: 1000;
     padding: 10px 0;
   }
 
@@ -105,7 +112,8 @@
   }
 
   .nav-links a {
-    padding: 10px;
+    padding: 10px 0;
     text-align: center;
+    color: #000;
   }
 }
