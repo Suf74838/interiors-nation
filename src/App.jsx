@@ -16,7 +16,7 @@ function App() {
 
       <div className="main">
         <section id="home" className="section hero">
-          <h1>INTERIOR NATION</h1>
+          <h1>INTERIORS NATION</h1>
           <p>Your vision, our design.</p>
         </section>
 
