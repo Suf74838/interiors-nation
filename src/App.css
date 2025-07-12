@@ -188,14 +188,18 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  height: 60px;
   z-index: 1000;
 }
 
 .whatsapp-float img {
-  height: 60px;
-  width: 60px;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
 }
-.whatsapp-float {
-  background-color: greenyellow;
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
 }

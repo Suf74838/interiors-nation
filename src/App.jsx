@@ -50,7 +50,7 @@ function App() {
 
         <section id="contact" className="section">
           <h2>Contact Us</h2>
-          <p>📞 +91 96638 49250<br />📞 +966 56 384 4454</p>
+          <p>📞 +966 55 786 8543<br />📞 +91 96638 49250</p>
         </section>
       </div>
 
@@ -62,18 +62,25 @@ function App() {
             <h3>INTERIOR NATION</h3>
           </div>
           <div className="footer-contact">
+            <p>📞 +966 55 786 8543</p>
             <p>📞 +91 96638 49250</p>
-            <p>📞 +966 56 384 4454</p>
           </div>
           <div className="footer-social">
-            <a href="https://wa.me/919663849250" target="_blank" rel="noreferrer">WhatsApp</a> |
             <a href="mailto:interiornation@example.com"> Email</a> |
             <a href="https://instagram.com/interiornation" target="_blank" rel="noreferrer"> Instagram</a>
           </div>
         </div>
       </footer>
+      <a
+        href="https://wa.me/919663849250"
+        className="whatsapp-float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src="/whatsapp-icon.png" alt="Chat on WhatsApp" />
+      </a>
     </>
   );
-}
+  }
 
 export default App;
